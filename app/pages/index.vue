@@ -1,21 +1,18 @@
 <template>
-  <div class="container">
+  <div class="page-home">
     <h1>Hello Nuxt 4! 🚀</h1>
-    <p>Nuxt 4 プロジェクトへようこそ</p>
+    <p class="lead">Nuxt 4 プロジェクトへようこそ</p>
     <Counter />
     <nav>
-      <NuxtLink to="/about">About ページへ</NuxtLink>
+      <NuxtLink to="/about">About ページへ →</NuxtLink>
     </nav>
   </div>
 </template>
 
 <style scoped>
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+.page-home {
   text-align: center;
-  font-family: system-ui, sans-serif;
+  padding: 2rem 0;
 }
 
 h1 {
@@ -23,9 +20,10 @@ h1 {
   color: #00dc82;
 }
 
-p {
+.lead {
   font-size: 1.2rem;
   color: #666;
+  margin-top: 0.5rem;
 }
 
 nav {
@@ -34,11 +32,20 @@ nav {
 
 nav a {
   color: #00dc82;
-  text-decoration: none;
   font-weight: bold;
 }
 
 nav a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
 }
 </style>

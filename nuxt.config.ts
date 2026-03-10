@@ -2,6 +2,15 @@
 export default defineNuxtConfig({
   compatibilityDate: '2026-03-09',
 
+  modules: ['@nuxt/eslint'],
+
+  css: ['~/assets/css/reset.css'],
+
+  app: {
+    layoutTransition: false,
+    pageTransition: false,
+  },
+
   devtools: { enabled: true },
 
   devServer: {
