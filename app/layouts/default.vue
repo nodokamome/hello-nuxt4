@@ -23,7 +23,7 @@
   padding: 2rem 1rem;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .main {
     padding: 1rem;
   }

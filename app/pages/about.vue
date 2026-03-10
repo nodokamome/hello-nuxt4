@@ -34,7 +34,7 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   h1 {
     font-size: 1.5rem;
   }

@@ -94,7 +94,7 @@ const isOpen = ref(false)
   transform: translateY(-7px) rotate(-45deg);
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .menu-toggle {
     display: flex;
   }

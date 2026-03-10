@@ -2,7 +2,7 @@
   <div class="page-home">
     <h1>Hello Nuxt 4! 🚀</h1>
     <p class="lead">Nuxt 4 プロジェクトへようこそ</p>
-    <Counter />
+    <AppCounter />
     <nav>
       <NuxtLink to="/about">About ページへ →</NuxtLink>
     </nav>
@@ -39,7 +39,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   h1 {
     font-size: 1.75rem;
   }
